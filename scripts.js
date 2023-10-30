@@ -31,9 +31,9 @@ You can learn to loop or just stick to what u know.*/
 //{ return string "You lose! Paper beats Rock!"}
 
 //introduce your player and computer variable for choices
-let playerSelection, computerSelection;
+let playerSelection, computerSelection, result;
 computerSelection = getComputerChoice();
-playerSelection = prompt('Rock, Paper, or Scissors?').toLowerCase();
+// playerSelection = prompt('Rock, Paper, or Scissors?').toLowerCase();
 
 //create function called getComputerChoice
     //create a range component 
@@ -76,11 +76,81 @@ function playRound(playerSelection, computerSelection) {
         return 'Tie!'
     } 
 }
+//initiate the game function that keeps score and names a 
+// winner with playRound func as the parameter
+    // I need to make this code iterate five times
+    // Need to count the wins and losses
+   //create game function
+function game() {
+    let usrWin = 0;
+    let cpuWin = 0;
+    let tie = 0;
+    //variables to keep score count
+    playerSelection = prompt("Rock, Paper, or Scissors?!").toLowerCase();
+    computerSelection = getComputerChoice();
+    result = playRound(playerSelection, computerSelection);
+    if (result == 'Win!') {
+        usrWin++
+    } else if (result == 'Loser!') {
+        cpuWin++
+    } else {
+        tie++
+    };
+    console.log(result);
 
-// To get player selection, I need to prompt.
-// Based on the string input, I need to plug that in, with the play
-// round function
-// Then call the getComputerChoice function, and evaluate.
-// do a switch or if statements to evaluate what situation is true form 
-// from the play round function.
-// let playerSelection, computerSelection;
+    playerSelection = prompt("Rock, Paper, or Scissors?!").toLowerCase();
+    computerSelection = getComputerChoice();
+    result = playRound(playerSelection, computerSelection);
+    if (result == 'Win!') {
+        usrWin++
+    } else if (result == 'Loser!') {
+        cpuWin++
+    } else {
+        tie++
+    };
+    console.log(result);
+
+    playerSelection = prompt("Rock, Paper, or Scissors?!").toLowerCase();
+    computerSelection = getComputerChoice();
+    result = playRound(playerSelection, computerSelection);
+    if (result == 'Win!') {
+        usrWin++
+    } else if (result == 'Loser!') {
+        cpuWin++
+    } else {
+        tie++
+    };
+    console.log(result);
+
+    playerSelection = prompt("Rock, Paper, or Scissors?!").toLowerCase();
+    computerSelection = getComputerChoice();
+    result = playRound(playerSelection, computerSelection);
+    if (result == 'Win!') {
+        usrWin++
+    } else if (result == 'Loser!') {
+        cpuWin++
+    } else {
+        tie++
+    };
+    console.log(result);
+
+    playerSelection = prompt("Rock, Paper, or Scissors?!").toLowerCase();
+    computerSelection = getComputerChoice();
+    result = playRound(playerSelection, computerSelection);
+    if (result == 'Win!') {
+        usrWin++
+    } else if (result == 'Loser!') {
+        cpuWin++
+    } else {
+        tie++
+    };
+    console.log(result);
+    
+    if (usrWin > cpuWin) {
+        alert('You win all rounds!');
+    } else if (usrWin < cpuWin) {
+        alert('You lost losaaa!') 
+    } else {
+        alert('Nobody wins!')
+    };
+}
