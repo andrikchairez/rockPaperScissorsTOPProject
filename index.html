@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="scripts.js"></script>
+    <script src="scripts.js" defer></script>
 </head>
 <body>
-    
+    <div class="choicesContainer">
+        <button id="rock">
+            <h3>Rock</h3>
+            <p>The Earth's Core</p>
+        </button>
+        <p>text</p>
+
+        <button id="paper">
+            <h3>Paper</h3>
+            <p>The Destiny's Script</p>
+        </button>
+        <p>text</p>
+
+        <button id="scissors">
+            <h3>Scissors</h3>
+            <p>The Fate Cleaver</p>
+        </button>
+        <p>text</p>
+    </div>
+    <div class = "scoreBoard">
+        <div class = "scoreContainer">
+            <h2 class= "scoreHeader">Player</h2>
+            <p id= "usrWin">0</p>
+        </div>
+        <div class = "scoreContainer">
+            <h2 class= "scoreHeader">Computer</h2>
+            <p id= "cpuWin">0</p>
+        </div>
+        <h2 id = "outcomeText">Rock, Paper, or Scissors. Call it.</h2>
+    </div>
 </body>
 </html>
