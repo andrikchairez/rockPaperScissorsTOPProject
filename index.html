@@ -4,36 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="styles.css" rel="stylesheet"></link>
     <script src="scripts.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="choicesContainer">
-        <button id="rock">
-            <h3>Rock</h3>
-            <p>The Earth's Core</p>
-        </button>
-        <p>text</p>
+    <div class="bodyContainer">
+        
+        <div class="choicesContainer">
+            <img src = "rockFalse.svg">
+            <button id="rock">
+                <h3>Rock</h3>
+                <p class="btnTxt">The Earth's Core</p>
+            </button>
+            <p>Forged from the heart of the earth, this rock pulsates with ancient power. 
+                It's a key fragment to a mystical seal, symbolizing unbreakable strength 
+                and the enduring force of nature.
+            </p>
+        </div>
+        
+        <div class="choicesContainer">
+            <img src = "paperFalse.svg">
+            <button id="paper">
+                <h3>Paper</h3>
+                <p class="btnTxt">The Destiny's Script</p>
+            </button>
+            <p>This ethereal paper, woven from divine trees, contains fate-altering inscriptions. 
+                It's the other half of the mystical seal, representing wisdom, destiny, and the 
+                power to shape reality.
+            </p>    
+        </div>
 
-        <button id="paper">
-            <h3>Paper</h3>
-            <p>The Destiny's Script</p>
-        </button>
-        <p>text</p>
+        <div class="choicesContainer">
+            <img src = "scissorsFalse.svg">
+            <button id="scissors">
+                <h3>Scissors</h3>
+                <p class="btnTxt">The Fate Cleaver</p>
+            </button>
+            <p>Crafted at time's dawn, these scissors can cut through the fabric of destiny itself. 
+                They balance the powers of creation and destruction, essential for maintaining cosmic 
+                harmony and ensuring neither the Rock nor the Paper becomes dominant.
+            </p>
+    
+        </div>
 
-        <button id="scissors">
-            <h3>Scissors</h3>
-            <p>The Fate Cleaver</p>
-        </button>
-        <p>text</p>
     </div>
-    <div class = "scoreBoard">
+    <div class = "scoreBoardContainer">
         <div class = "scoreContainer">
-            <h2 class= "scoreHeader">Player</h2>
-            <p id= "usrWin">0</p>
+            <p class= "scoreHeader">You</p>
+            <h2 id= "usrWin">0</h2>
         </div>
         <div class = "scoreContainer">
-            <h2 class= "scoreHeader">Computer</h2>
-            <p id= "cpuWin">0</p>
+            <p class= "scoreHeader">Equilibra, the Triarch</p>
+            <h2 id= "cpuWin">0</h2>
         </div>
         <h2 id = "outcomeText">Rock, Paper, or Scissors. Call it.</h2>
     </div>
